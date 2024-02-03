@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://developerfaizanday04.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Do you wanna see your Birthday wish?</h1>
+      </div>
+      
+      <div class="gif_container">
+        <img src="milk-and-mocha-cute.gif" alt="Cute animated illustration">
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()" style="left: 644.934px; top: 437.993px;">
+          No
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  
+
+</body></html>
